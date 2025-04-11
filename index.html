@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMID Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🤖 AMID Generator</h1>
+    <p>Створи крутий пост за 1 хвилину з AI-помічником</p>
+  </header>
+
+  <section class="form-section">
+    <form id="postForm">
+      <label for="category">Тип поста:</label>
+      <select id="category" required>
+        <option value="Продаж">🛍️ Продаж товару</option>
+        <option value="Особистий">👤 Особистий пост</option>
+        <option value="Послуга">💼 Послуга</option>
+        <option value="Оголошення">📢 Оголошення / Подія</option>
+      </select>
+
+      <label for="platforms">Платформи публікації:</label>
+      <div id="platforms">
+        <label><input type="checkbox" value="Instagram"> Instagram</label>
+        <label><input type="checkbox" value="Telegram"> Telegram</label>
+        <label><input type="checkbox" value="Facebook"> Facebook</label>
+        <label><input type="checkbox" value="Інше"> Інше</label>
+      </div>
+
+      <label for="style">Стиль поста:</label>
+      <select id="style">
+        <option value="Прямо і по суті">🎯 Прямо і по суті</option>
+        <option value="Дружньо">🤝 Дружньо</option>
+        <option value="Професійно">💼 Професійно</option>
+        <option value="Весело">🎉 Весело</option>
+      </select>
+
+      <label for="details">Що написати в пості:</label>
+      <textarea id="details" placeholder="Опиши товар/послугу/ідею..." required></textarea>
+
+      <label for="email">Ваш email для результату:</label>
+      <input type="email" id="email" required>
+
+      <button type="submit">Згенерувати пост</button>
+    </form>
+  </section>
+
+  <section class="payment-section">
+    <h2>💳 Спочатку оплатіть</h2>
+    <p>Вартість генерації: <strong>20 грн</strong></p>
+    <a class="pay-button" href="https://wise.com/pay/r/tSDbns4XYJxYAZY" target="_blank">Оплатити</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AMID. Усі права захищено.</p>
+  </footer>
+
+  <script src="scripts/ai.js"></script>
+</body>
+</html>
